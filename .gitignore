@@ -1,6 +1,7 @@
 # build output
 dist/
 .output/
+.astro/
 
 # dependencies
 node_modules/
@@ -11,15 +12,25 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # environment variables
 .env
-.env.production
+.env.*
+!.env.example
+!.example.env
 
-# macOS-specific files
+# IDE
+.idea/
+*.iml
+
+# OS-specific files
 .DS_Store
+Thumbs.db
+Desktop.ini
 
 # misc
 *.pem
-.cache
-.astro
+.cache/
+
+# JetBrains IDE
+.idea/
+*.iml
